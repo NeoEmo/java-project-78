@@ -34,6 +34,8 @@ dependencies {
     // Source: https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation("org.apache.commons:commons-lang3:3.20.0")
 
+    // Source: https://mvnrepository.com/artifact/org.projectlombok/lombok
+    implementation("org.projectlombok:lombok:1.18.46")
 }
 
 tasks.test {
