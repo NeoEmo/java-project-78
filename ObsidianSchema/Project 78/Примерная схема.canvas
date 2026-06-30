@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"d11db5703cdfe643","type":"file","file":"Project 78/Validator class.md","x":-11,"y":-110,"width":400,"height":400},
+		{"id":"90b0551fedb91d23","type":"file","file":"Project 78/StringSchema class.md","x":-1040,"y":880,"width":400,"height":400},
+		{"id":"8b760378c07b5c3a","type":"file","file":"Project 78/NumberSchema class.md","x":-11,"y":880,"width":400,"height":400},
+		{"id":"b9393a1bd1e20cc1","type":"file","file":"Project 78/BaseSchema Interface.md","x":-11,"y":1702,"width":400,"height":400},
+		{"id":"8ccf4824c4435a63","type":"file","file":"Project 78/MapSchema class.md","x":1000,"y":880,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"06fdcc47f048a336","fromNode":"90b0551fedb91d23","fromSide":"top","toNode":"d11db5703cdfe643","toSide":"bottom","label":"Validator 1 к N StringSchema"},
+		{"id":"06145f1a4e320f19","fromNode":"8b760378c07b5c3a","fromSide":"top","toNode":"d11db5703cdfe643","toSide":"bottom","label":"Validator 1 к N NumberSchema"},
+		{"id":"3cd5699b0c70ad1c","fromNode":"8ccf4824c4435a63","fromSide":"top","toNode":"d11db5703cdfe643","toSide":"bottom","label":"Validator 1 к N MapSchema"},
+		{"id":"e17fbd5db24e9476","fromNode":"b9393a1bd1e20cc1","fromSide":"top","toNode":"8ccf4824c4435a63","toSide":"bottom"},
+		{"id":"4834a77ef2139584","fromNode":"b9393a1bd1e20cc1","fromSide":"top","toNode":"8b760378c07b5c3a","toSide":"bottom"},
+		{"id":"5f93cb52a8b0b64c","fromNode":"b9393a1bd1e20cc1","fromSide":"top","toNode":"90b0551fedb91d23","toSide":"bottom"}
+	]
+}
