@@ -48,6 +48,15 @@ tasks.getByName("run", JavaExec::class) {
     standardInput = System.`in`
 }
 
+sonar {
+    properties {
+        property("sonar.host.url", "https://sonarcloud.io")
+        property("sonar.projectKey", "NeoEmo_java-project-78")
+        property("sonar.organization", "neoemo")
+        property("sonar.coverage.jacoco.xmlReportPaths", "${layout.buildDirectory.get()}/reports/jacoco/test/jacocoTestReport.xml")
+    }
+}
+
 tasks.jacocoTestReport {
     dependsOn(tasks.test)
     reports {
