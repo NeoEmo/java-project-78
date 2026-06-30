@@ -1,6 +1,6 @@
 package hexlet.code.schemas;
 
-public class StringSchema{
+public class StringSchema {
     private boolean required;
     private int minLength;
     private String contains;
