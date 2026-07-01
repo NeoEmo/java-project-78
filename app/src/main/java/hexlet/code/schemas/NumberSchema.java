@@ -37,9 +37,9 @@ public class NumberSchema implements BaseSchema<Integer> {
         return this;
     }
 
-    public void range(int min, int max) {
+    public void range(int minValue, int maxValue) {
         this.range = true;
-        this.min = min;
-        this.max = max;
+        this.min = minValue;
+        this.max = maxValue;
     }
 }
