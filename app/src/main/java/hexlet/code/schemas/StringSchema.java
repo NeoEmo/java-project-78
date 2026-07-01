@@ -1,12 +1,13 @@
 package hexlet.code.schemas;
 
-public class StringSchema {
+public class StringSchema implements BaseSchema<String> {
     private boolean required;
     private int minLength;
     private String contains;
     private boolean hasContains = false;
     private boolean hasMinLength = false;
 
+    @Override
     public boolean isValid(String string) {
         if (required && (string == null || string.isEmpty())) {
             return false;
