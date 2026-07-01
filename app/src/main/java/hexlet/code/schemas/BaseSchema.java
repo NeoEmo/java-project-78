@@ -1,5 +1,5 @@
-//package hexlet.code.schemas;
-//
-//public interface BaseSchema<T> {
-//    boolean isValid(T type);
-//}
+package hexlet.code.schemas;
+
+public interface BaseSchema<T> {
+    boolean isValid(T type);
+}
