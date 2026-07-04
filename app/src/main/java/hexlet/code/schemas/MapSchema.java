@@ -11,9 +11,9 @@ public class MapSchema implements BaseSchema<Map> {
         this.required = true;
     }
 
-    public MapSchema sizeof(int size) {
+    public MapSchema sizeof(int sizeSchema) {
         this.sizeOf = true;
-        this.size = size;
+        this.size = sizeSchema;
         return this;
     }
 
