@@ -32,8 +32,9 @@ public class StringSchema implements BaseSchema<String> {
         return true;
     }
 
-    public void required() {
+    public StringSchema required() {
         this.required = true;
+        return this;
     }
 
     public StringSchema minLength(int length) {
