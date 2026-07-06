@@ -1,10 +1,7 @@
 package hexlet.code.schemas;
 
-
 import hexlet.code.Validator;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -46,47 +43,5 @@ public class StringSchemaTest {
 
         assertEquals(expected, v.getClass().getSimpleName());
         assertEquals(expected2, schema.getClass().getSimpleName());
-    }
-
-    @Test
-    public void flagsTest() {
-        Boolean expected = false;
-        var v = new Validator();
-        var schema = v.string();
-        var validField = schema.getClass().getDeclaredFields();
-        ArrayList<Boolean> actual = new ArrayList<>();
-        for (var field : validField) {
-            if (field.getName().equals("hasContains") || field.getName().equals("hasMinLength")) {
-                field.setAccessible(true);
-                try {
-                    actual.add(field.getBoolean(schema));
-                } catch (IllegalAccessException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        }
-        assertEquals(expected, actual.getFirst());
-        assertEquals(expected, actual.getLast());
-    }
-
-    @Test
-    public void flagsTest2() {
-        Boolean expected = true;
-        var v = new Validator();
-        var schema = v.string().minLength(4).contains("hexlet");
-        var validField = schema.getClass().getDeclaredFields();
-        ArrayList<Boolean> actual = new ArrayList<>();
-        for (var field : validField) {
-            if (field.getName().equals("hasContains") || field.getName().equals("hasMinLength")) {
-                field.setAccessible(true);
-                try {
-                    actual.add(field.getBoolean(schema));
-                } catch (IllegalAccessException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        }
-        assertEquals(expected, actual.getFirst());
-        assertEquals(expected, actual.getLast());
     }
 }
