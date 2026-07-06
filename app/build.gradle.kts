@@ -1,16 +1,12 @@
 plugins {
+    id("java")
     id("checkstyle")
-    id("application")
     id("org.sonarqube") version "7.3.1.8318"
     id("jacoco")
 }
 
 group = "hexlet.code"
 version = "1.0-SNAPSHOT"
-
-application {
-    mainClass = "hexlet.code.App"
-}
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
@@ -44,10 +40,6 @@ tasks.test {
 
 checkstyle {
     toolVersion = "10.12.4"
-}
-
-tasks.getByName("run", JavaExec::class) {
-    standardInput = System.`in`
 }
 
 sonar {
