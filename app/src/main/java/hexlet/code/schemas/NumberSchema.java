@@ -8,17 +8,18 @@ public class NumberSchema extends BaseSchema<Integer> {
     }
 
     public NumberSchema positive() {
-        addCheck("positive", value -> {
-            if (required && value == null) {
-                return false;
-            }
-
-            if (!required && value == null) {
-                return true;
-            } else {
-                return value > 0;
-            }
-        });
+        addCheck("positive", value -> value > 0);
+//        {
+//            if (required && value == null) {
+//                return false;
+//            }
+//
+//            if (!required && value == null) {
+//                return true;
+//            } else {
+//                return value > 0;
+//            }
+//        });
         return this;
     }
 
