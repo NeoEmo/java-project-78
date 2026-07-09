@@ -2,7 +2,7 @@
 	"nodes":[
 		{"id":"d11db5703cdfe643","type":"file","file":"Программирование/Project 78/Validator class.md","x":-11,"y":-110,"width":400,"height":400},
 		{"id":"90b0551fedb91d23","type":"file","file":"Программирование/Project 78/StringSchema class.md","x":-1040,"y":880,"width":400,"height":400},
-		{"id":"b9393a1bd1e20cc1","type":"file","file":"Программирование/Project 78/BaseSchema Interface.md","x":-11,"y":1702,"width":400,"height":400},
+		{"id":"b9393a1bd1e20cc1","type":"file","file":"Программирование/Project 78/BaseSchema T absctact class.md","x":-11,"y":1702,"width":400,"height":400},
 		{"id":"8ccf4824c4435a63","type":"file","file":"Программирование/Project 78/MapSchema class.md","x":1000,"y":880,"width":400,"height":400},
 		{"id":"8b760378c07b5c3a","type":"file","file":"Программирование/Project 78/NumberSchema class.md","x":-20,"y":880,"width":400,"height":400}
 	],
