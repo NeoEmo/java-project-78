@@ -53,8 +53,8 @@
 a AssertTrue проверяет на то, что isValid() выдаёт true (проверка значения пройдена).
 
 ### Ссылки на документацию по-классам:
-1) [BaseSchema](ObsidianSchema/Project%2078/BaseSchema%20T%20absctact%20class.md)
-2) [MapSchema](ObsidianSchema/Project%2078/MapSchema%20class.md)
-3) [NumberSchema](ObsidianSchema/Project%2078/NumberSchema%20class.md)
-4) [![StringSchema](ObsidianSchema/Project%2078/fixtures/String)](ObsidianSchema/Project%2078/StringSchema%20class.md)
-5) [Validator](ObsidianSchema/Project%2078/Validator%20class.md)
+1) 🧬 [BaseSchema](ObsidianSchema/Project%2078/BaseSchema%20T%20absctact%20class.md)
+2) 🗺️ [MapSchema](ObsidianSchema/Project%2078/MapSchema%20class.md)
+3) 🔢 [NumberSchema](ObsidianSchema/Project%2078/NumberSchema%20class.md)
+4) 📝 [StringSchema](ObsidianSchema/Project%2078/StringSchema%20class.md)
+5) ⚙️ [Validator](ObsidianSchema/Project%2078/Validator%20class.md)
