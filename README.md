@@ -32,12 +32,14 @@
     с) shape(Map<String, BaseSchema>) - проверка нескольких схем в формате Map 
     (Хороший пример лежит в MapSchemaTest, а именно shapeSchemaTest()).
 2) StringSchema:
+
     a) required() - обязательное присутсвие данных, не должно быть null или isEmpty().
 
     b) minLength(int lengthOf) - минимальная длинна строки.
 
     с) contains(String str) - проверка на содержание в строке какого-нибудь слова\строки\буквы итд.
 3) NumberSchema:
+
     a) required() - обязательное пристутсвие данных, не должно быть null.
 
     b) positive() - проверка на то, чтобы число было положительным
